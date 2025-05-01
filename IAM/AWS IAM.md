@@ -77,3 +77,77 @@ By enforcing both properly, you can:
 
 <img width="470" alt="Screenshot 2025-05-01 at 12 39 22 PM" src="https://github.com/user-attachments/assets/1fb07018-e914-4412-9a5e-6c30394d283c" />
 
+---
+#### AWS IAM: Authentication & Authorization in a DevOps Context
+
+##### Overview
+
+As a **DevOps Engineer** at `example.com`, you are responsible for managing the AWS environment securely. This includes ensuring that users only have the access they need to perform their jobs — no more, no less.
+
+This document outlines why **IAM (Identity and Access Management)** is critical in AWS and how to properly implement it to enforce authentication and authorization within your organization.
+
+---
+
+#### Problem Without IAM
+
+Imagine you’ve created an AWS account for your company and shared the **root account credentials** with the entire team.
+
+##### Consequences:
+- **Everyone** can access all AWS services (EC2, RDS, S3, EKS, etc.)
+- Any user can **accidentally or intentionally**:
+  - Terminate EC2 instances
+  - Delete critical database tables in RDS
+  - Remove production files from S3
+- **No accountability or control**
+
+> 🛑 This setup is highly insecure and violates best practices.
+
+---
+
+##### Solution: Use AWS IAM
+
+**IAM (Identity and Access Management)** enables secure access control in AWS.
+
+### IAM Solves:
+- ✅ **Authentication** – Verify who the user is.
+- ✅ **Authorization** – Define what the user can do.
+
+---
+
+##### Example Workflow: Onboarding a New User
+
+Let’s say Employee `501` joins and needs access.
+
+##### Step 1: Determine Access Requirements
+Employee 501 needs:
+- **Read access** to RDS (Database)
+- **Access to EKS** (Kubernetes)
+
+##### Step 2: DevOps Engineer Actions
+1. Login to AWS using the **root account** (once only) or an **admin IAM user**.
+2. Open the **IAM service**.
+3. Create a **new IAM user**:
+    - Username: `employee501`
+    - Programmatic and/or Console access
+4. Attach required **IAM Policies**:
+    - `AmazonRDSReadOnlyAccess`
+    - Custom policy or managed policy for EKS access
+5. Share credentials securely with the user.
+
+##### Step 3: Result
+Employee `501`:
+- Can read data from RDS
+- Can interact with EKS (as allowed)
+- **Cannot delete** critical infrastructure or access other services
+
+---
+
+##### Best Practices
+
+- 🔒 **Never share the root account**
+- 🔐 Enable **MFA** on all accounts
+- 🎯 Follow **least privilege principle**
+- 📄 Use **IAM policies** to define access clearly
+- 📦 Group users by **roles or departments** using IAM groups
+- 
+<img width="470" alt="Screenshot 2025-05-01 at 5 50 14 PM" src="https://github.com/user-attachments/assets/69817e2e-8ea6-467a-a521-40032e5adeff" />
