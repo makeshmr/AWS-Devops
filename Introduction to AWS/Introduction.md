@@ -1,5 +1,5 @@
 # Topics to be covered
-- What is Cloud?
+### What is Cloud?
 
   About 10–20 years ago, companies used to buy physical servers to run their applications. Just like how you install software on your laptop, 
   companies would install applications on these servers. They’d buy the servers from companies like IBM or HP, set them up in one place called a   data center, and connect everything with proper wiring, networking, and cooling systems.
@@ -20,7 +20,7 @@
 
 When companies build and manage their own virtualized setup internally, it’s called a Private Cloud.
 
-- Public vs Private Cloud
+### Public vs Private Cloud
 A private cloud is when a company builds and manages its cloud setup within the organization. This means:
 * Only people within that company can access the servers.
 * No other company or outsider can request resources from this setup.
@@ -36,7 +36,7 @@ Companies that handle sensitive data, like banks or government agencies, often p
 
 This is called a public cloud because anyone (from any organization) can use it. You can choose where you want your virtual server (e.g., in the US or India), but you don't manage the hardware — the cloud provider does.
 
-### Key Differences Between Private Cloud and Public Cloud
+# Key Differences Between Private Cloud and Public Cloud
 
 | **Feature**     | **Private Cloud**                                 | **Public Cloud**                                      |
 |-----------------|---------------------------------------------------|-------------------------------------------------------|
