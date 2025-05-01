@@ -36,7 +36,7 @@ Companies that handle sensitive data, like banks or government agencies, often p
 
 This is called a public cloud because anyone (from any organization) can use it. You can choose where you want your virtual server (e.g., in the US or India), but you don't manage the hardware — the cloud provider does.
 
-# Key Differences Between Private Cloud and Public Cloud
+#### Key Differences Between Private Cloud and Public Cloud
 
 | **Feature**     | **Private Cloud**                                 | **Public Cloud**                                      |
 |-----------------|---------------------------------------------------|-------------------------------------------------------|
