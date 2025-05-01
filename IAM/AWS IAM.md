@@ -40,7 +40,7 @@ In AWS:
 - It answers the question:  
   ➤ *“Are you allowed to log into this AWS account?”*
 
----
+
 
 #### ✅ What is Authorization?
 
@@ -86,7 +86,7 @@ As a **DevOps Engineer** at `example.com`, you are responsible for managing the 
 
 This document outlines why **IAM (Identity and Access Management)** is critical in AWS and how to properly implement it to enforce authentication and authorization within your organization.
 
----
+
 
 #### Problem Without IAM
 
@@ -102,7 +102,6 @@ Imagine you’ve created an AWS account for your company and shared the **root a
 
 > 🛑 This setup is highly insecure and violates best practices.
 
----
 
 ##### Solution: Use AWS IAM
 
