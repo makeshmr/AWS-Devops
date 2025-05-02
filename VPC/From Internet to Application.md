@@ -1,46 +1,5 @@
 
-                                    Internet
-                                        |
-                                        | (HTTPS/HTTP Request)
-                                        v
-+-----------------------+
-|   Internet Gateway    |
-+-----------------------+
-          |
-          | (Routing based on Destination IP)
-          v
-+-----------------------+
-|   Public Subnet       |
-| +-------------------+ |
-| |   Load Balancer   | |
-| +-------------------+ |
-+-----------------------+
-          |
-          | (Forwarding based on Target Group rules)
-          v
-+-----------------------+
-|   Private Subnet 1    |       +-----------------------+
-| +-------------------+ |       |   Private Subnet 2    |
-| |   EC2 Instance    | | <-----> |   EC2 Instance    | |
-| |   (Application)   | |       |   (Application)   | |
-| +-------------------+ |       +-------------------+ |
-|   Security Group    |       |   Security Group    |
-|   (Inbound Rules:   |       |   (Inbound Rules:   |
-|    Allow traffic     |       |    Allow traffic     |
-|    from Load Balancer)|       |    from Load Balancer)|
-+-----------------------+       +-----------------------+
-          ^
-          | (Application Response)
-          |
-+-----------------------+
-|   Load Balancer       |
-+-----------------------+
-          |
-          | (Response back to User)
-          v
-
-
-          Internet
+![Gemini_Generated_Image_ha63cpha63cpha63](https://github.com/user-attachments/assets/5f4b5b73-8124-47b7-9ba5-9f3a9449d3b2)
 
 
 ## Traffic Flow: From Internet to Application
