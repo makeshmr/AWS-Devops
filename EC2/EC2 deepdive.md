@@ -17,6 +17,7 @@ This hands-on session is designed to be interactive and beginner-friendly. Wheth
 It is a **virtual server** provided by **AWS on demand**, allowing you to run applications, host websites, or deploy services in the cloud.
 
 ---
+![Screenshot 2025-05-02 at 7 34 43 AM (2)](https://github.com/user-attachments/assets/aaeb5e7f-1671-41b1-bd86-f5f307f755f2)
 
 #### 🔍 Breaking Down the Term: EC2
 
