@@ -17,7 +17,7 @@ Deliver the broadest choice of compute, networking (up to 400 Gbps), and storage
 
 EC2 Instance Types
 
-- Recommended to follow this page for very detailed and updated information.
+- Recommended to follow this[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html] page for very detailed and updated information.
 
 General purpose
 
