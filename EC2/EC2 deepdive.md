@@ -2,11 +2,11 @@ Amazon EC2 (Elastic Compute Cloud) is one of the most widely used and powerful s
 
 In this tutorial, we’ll cover both the theoretical concepts and the practical implementation of EC2 instances. By following along, you will:
 
-🔹 Learn what EC2 is and why it’s so popular
-🔹 Launch your own EC2 instance on AWS
-🔹 Connect to the instance using SSH
-🔹 Deploy a sample application on the instance
-🔹 Access the deployed application from the internet (i.e., from your local laptop or anywhere in the world)
+- Learn what EC2 is and why it’s so popular
+- Launch your own EC2 instance on AWS
+- Connect to the instance using SSH
+- Deploy a sample application on the instance
+- Access the deployed application from the internet (i.e., from your local laptop or anywhere in the world)
 
 This hands-on session is designed to be interactive and beginner-friendly. Whether you're preparing for a certification or building your first cloud project, this tutorial will give you the skills to confidently work with EC2.
 
