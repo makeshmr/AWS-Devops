@@ -79,6 +79,21 @@ As a **DevOps Engineer** or **AWS Admin**, you play a critical role in configuri
 
 ---
 
+In AWS, security is a shared responsibility. AWS takes care of the physical infrastructure and some security tools, but the customer (DevOps Engineers or AWS Admins) is responsible for securing their applications, data, and configurations. Below is a table that outlines the shared responsibilities of AWS and the customer:
+
+| **Concept**                   | **AWS Responsibility**                                                         | **Customer Responsibility (DevOps/AWS Admin)**                                       | **Explanation**                                                                                                  |
+|-------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Cloud Infrastructure**       | AWS secures the physical hardware, data centers, and network infrastructure.    | Customers do not need to secure physical infrastructure.                           | AWS ensures the physical security and management of the data centers, servers, and network hardware.             |
+| **Security Groups**            | AWS provides the tool to configure security groups but does not manage them.   | Customers configure security groups to control traffic to EC2 instances.           | Security Groups are stateful firewalls that control the inbound and outbound traffic at the instance level.     |
+| **NACLs (Network ACLs)**       | AWS provides the NACLs feature for controlling traffic at the subnet level.    | Customers configure NACLs to control inbound and outbound traffic for subnets.     | NACLs are stateless firewalls that provide subnet-level traffic control, allowing/blocking traffic based on rules.|
+| **Data Security**              | AWS provides encryption tools for data at rest and in transit.                  | Customers are responsible for ensuring that data is properly encrypted and secure. | Customers are responsible for configuring encryption, access control, and protection of sensitive data.         |
+| **IAM (Identity & Access)**   | AWS provides IAM to manage access to AWS resources.                            | Customers configure IAM roles and permissions for users and services.             | IAM ensures that only authorized users and services can access AWS resources based on their permissions.         |
+| **Application Security**       | AWS provides the environment for deployment, but customers manage the apps.    | Customers configure their apps, including firewalls, encryption, and monitoring.   | Customers must secure their applications by configuring firewalls, applying patches, and ensuring secure code.    |
+| **VPC (Virtual Private Cloud)**| AWS offers tools for setting up VPCs with public/private subnets and internet access. | Customers design VPCs with appropriate subnets and routing for application isolation. | VPC allows customers to isolate their applications within private subnets and control traffic with security tools.|
+| **Monitoring & Logging**       | AWS provides tools like CloudWatch and CloudTrail for monitoring and logging.  | Customers configure CloudWatch to monitor security-related events and logs.        | Customers are responsible for setting up monitoring and taking corrective actions when security issues arise.     |
+
+---
+
 ## 📑 Conclusion
 
 AWS’s shared responsibility model means that **AWS secures the cloud infrastructure**, but **you** are responsible for securing your data, applications, and services within the cloud. By properly configuring **Security Groups** and **NACLs**, you ensure that your AWS resources are protected from unauthorized access and potential threats.
